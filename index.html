@@ -1,78 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Siva Naga Teja | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #1e293b;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #1e293b;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .contact {
-      text-align: center;
-      margin-top: 2rem;
-    }
-  </style>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Siva Naga Teja - Software Engineer | Gen AI | Media Processing | Python</title>
+    <meta name="description"
+        content="Siva Naga Teja is an experienced software engineer skilled in Python, Generative AI, media processing with FFmpeg, backend development, and cloud services.">
+    <meta name="keywords"
+        content="Siva Naga Teja, Software Engineer, Python, Generative AI, FFmpeg, Backend Developer, Media Processing, Cloud Services, API Development, AI Integration">
+    
+    <!-- Open Graph Meta Tags for Social Media Preview -->
+    <meta property="og:title"
+        content="Siva Naga Teja - Software Engineer | Gen AI | Media Processing | Python">
+    <meta property="og:description"
+        content="Explore the portfolio of Siva Naga Teja, a developer with strong experience in Python, Generative AI, media processing, and cloud-based backend systems.">
+    <meta property="og:image" content="https://sivanaga710.github.io/portofolio/assets/img/profile-pic_2.jpg">
+    <meta property="og:url" content="https://sivanaga710.github.io/portofolio/">
+    <meta property="og:type" content="website">
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://sivanaga710.github.io/portofolio/">
+
+
+    <!-- Favicons -->
+    <link href="assets/img/touch-icon-3.ico" rel="icon">
+    <link href="assets/img/touch-icon-3.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- JSON-LD structured data for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Siva Naga Teja",
+            "jobTitle": "Software Engineer",
+            "url": "https://sivanaga710.github.io/portofolio/",
+            "sameAs": [
+                "https://github.com/sivanaga710",
+                "https://www.linkedin.com/in/siva-naga-teja-444887363/",
+            ],
+            "email": "mailto:sivanagteja710@gamil.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Hyderabad",
+                "addressRegion": "Telangana",
+                "addressCountry": "India"
+            },
+            "telephone": "+91-9059880832"
+        }
+    </script>
 </head>
+
 <body>
-  <header>
-    <h1>Siva Naga Teja</h1>
-    <p>Gen AI Developer | Python | FFmpeg | Video Streaming</p>
-  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate developer experienced in Gen AI, Python, FFmpeg, video processing, and web development.
-      I've worked on tools like Playout and Videograph.AI, focusing on AI-based video clipping, metadata generation, live streaming, and SCTE marker integration.
-    </p>
-  </section>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Playout:</strong> Migrated a Python-based live script to Next.js with Redis & PostgreSQL. Added SCTE-35 restream logic for ad monetization.</li>
-      <li><strong>Videograph.AI:</strong> Built tools for downloading, encoding, and AI-based clip generation. Integrated React.js/Next.js and GCP Vertex AI for Gen AI solutions.</li>
-    </ul>
-  </section>
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, FastAPI, PostgreSQL</li>
-      <li>FFmpeg, FFprobe</li>
-      <li>Gen AI, Prompt Engineering, LangChain, Vertex AI</li>
-      <li>React.js, Next.js, JavaScript</li>
-    </ul>
-  </section>
+            <div class="profile">
+                <img src="assets/img/profile-pic_2.jpg" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Siva Naga Teja</a></h1>
+                <div class="social-links mt-3 text-center">
+                    <a href="https://github.com/sivanaga710" class="github"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/siva-naga-teja-444887363" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <!--<a href="mailto:sivanagateja710@gmail.com" class="gmail"><i class="bx bxl-gmail" ></i></a>-->
+                </div>
+            </div>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: sivateja.dev@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  </section>
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                            <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+                    </li>
+                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
+                            <span>Resume</span></a></li>
+                    <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-code-slash"></i>
+                            <span>Skills</span></a>
+                    </li>
+                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+                            <span>Services</span></a></li>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+                    <li><a href="#projects" class="nav-link scrollto"><i class="fas fa-flask"></i>
+                            <span>projects</span></a></li>
+                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+                            <span>Contact</span></a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+            <h1>Siva Naga Teja</h1>
+            <p>I'm <span class="typed" data-typed-items="Software Engineer, Backend Developer, Video Streaming Expert, Cloud Engineer, Gen AI Enthusiast"></span></p>
+            <a href="assets/files/siva_Resume_genai.pdf" class="btn btn-resume" download>
+                <i class="bi bi-file-earmark-arrow-down"></i> Download Resume
+            </a>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>About</h2>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <img src="assets/img/profile-pic_3.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                        <h3>Software Engineer &amp; Generative AI Developer</h3>
+                        <p class="fst-italic">
+                            Passionate software engineer specializing in Python development, AI/ML workflows, and scalable video pipeline engineering.
+                            Committed to delivering high-quality, innovative solutions that bridge backend systems and intelligent media processing.
+                        </p>
+                        <p>
+                            Experienced in building robust backend applications with Python, FastAPI, and Flask, alongside deep expertise in video processing 
+                            using FFmpeg, FFprobe, and streaming architectures. Skilled in end-to-end video pipeline design, including encoding, transcoding, 
+                            segmenting, live streaming, and AI-based media analysis. Proficient in Generative AI, Retrieval-Augmented Generation (RAG), 
+                            Prompt Engineering, and cloud platforms like GCP and Vertex AI. Familiar with tools and technologies such as Git, Docker, Redis, 
+                            OpenSearch, PostgreSQL, and Next.js for full-stack development. Adept at working in Agile environments, with strong collaboration, 
+                            problem-solving, and innovation-driven focus.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+
+        <!-- ======= Resume Section ======= -->
+        <section id="resume" class="resume">
+            <div class="container">
+
+                <div class="section-title d-flex justify-content-between align-items-center">
+                    <div class="title-text">
+                        <h2>Professional Resume</h2>
+                        <p>Discover my educational background and professional growth in software engineering and development.</p>
+                    </div>
+                    <div class="resume-button">
+                        <a href="assets/files/siva_Resume_genai.pdf" class="btn btn-primary" download>
+                            <i class="bi bi-file-earmark-arrow-down"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <h3 class="resume-title">Summary</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Siva Naga Teja</h4>
+                            <p><em>Skilled Software Engineer with over 2 years of experience in Python development, Unix/Linux environments, AWS cloud solutions, and full-stack application development. 
+                            Proficient in building secure, scalable backend services, integrating AI-driven video analysis workflows, and working with live streaming and video processing technologies.</em></p>
+                            <ul>
+                                <li>Hyderabad, Telangana, India</li>
+                                <li>+91 9059880832</li>
+                                <li>sivanagteja710@gmail.com</li>
+                            </ul>
+                        </div>
+                
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+                            <h5>2018 - 2022</h5>
+                            <p><em>Indian Institute of Information Technology</em></p>
+                            <p>CGPA: 6.81</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Intermediate Education (M.P.C)</h4>
+                            <h5>2016 - 2018</h5>
+                            <p><em>Sri Viswasanthi Educational Institutions</em></p>
+                            <p>Percentage: 97%</p>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>Software Engineer</h4>
+                            <h5>Sep 2022 - Present</h5>
+                            <p><em>YuppTV, Hyderabad, Telangana</em></p>
+                            <ul>
+                                <li>Over 2 years of experience in application development, backend services, and cloud integration, specializing in Python, Unix/Linux, and AWS.</li>
+                                <li>Built secure, high-performance Python APIs with Flask and async functions, and developed automation scripts to improve system efficiency.</li>
+                                <li>Led AI-driven video analysis projects using Vertex AI for automated clipping and metadata generation, optimizing video content workflows.</li>
+                                <li>Designed scalable cloud solutions leveraging AWS services like S3, Lambda, MediaTailor, MediaPackage, and CloudFront.</li>
+                                <li>Worked on video encoding, DRM encryption, live streaming, and catch-up VOD generation to deliver reliable media experiences.</li>
+                                <li>Contributed to full-stack development with React.js/Next.js and maintained backend services in Python and .NET with a focus on performance and security.</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section><!-- End Resume Section -->
+
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="skills section-bg">
+            <div class="container">
+        
+                <div class="section-title">
+                    <h2>Technical Skills</h2>
+                    <p>Leveraging cutting-edge technologies to build innovative solutions.</p>
+                </div>
+        
+                <div class="row justify-content-center">
+                    <!-- Card 1: Programming Languages & Frameworks -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon"><i class="bi bi-code-slash skill-icon"></i></div>
+                                    <h3>Programming Languages &amp; Frameworks</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="skill-details">
+                                        <h4><i class="bi bi-code"></i> Languages</h4>
+                                        <ul>
+                                            <li> Python</li>
+                                            <li> JavaScript</li>
+                                            <li> SQL</li>
+                                        </ul>
+                                        <h4><i class="bi bi-laptop"></i> Frontend</h4>
+                                        <ul>
+                                            <li> React.js</li>
+                                            <li> Next.js</li>
+                                            <li> HTML5</li>
+                                            <li> CSS3</li>
+                                        </ul>
+                                        <h4><i class="bi bi-server"></i> Backend</h4>
+                                        <ul>
+                                            <li> Flask</li>
+                                            <li> FastAPI (basics)</li>
+                                            <li> .NET (basic knowledge)</li>
+                                        </ul>
+                                        <h4><i class="bi bi-diagram-3"></i> API Technologies</h4>
+                                        <ul>
+                                            <li> REST APIs</li>
+                                            <li> CORS handling</li>
+                                            <li> Async APIs</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 2: Cloud & DevOps -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon"><i class="bi bi-cloud skill-icon"></i></div>
+                                    <h3>Cloud &amp; DevOps</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="skill-details">
+                                        <h4><i class="bi bi-cloud"></i> Cloud Platforms</h4>
+                                        <ul>
+                                            <li> AWS (S3, Lambda, MediaLive, MediaTailor, MediaPackage, CloudFront, EventBridge)</li>
+                                            <li> GCP (Vertex AI)</li>
+                                        </ul>
+                                        <h4><i class="bi bi-wrench"></i> DevOps & Tools</h4>
+                                        <ul>
+                                            <li> Git</li>
+                                            <li> Shell Scripting (basic)</li>
+                                            <li> Charles Proxy (for network troubleshooting)</li>
+                                            <li> VS Code, PyCharm, Visual Studio</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 3: Databases & Messaging -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon"><i class="bi bi-database skill-icon"></i></div>
+                                    <h3>Databases &amp; Messaging</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="skill-details">
+                                        <h4><i class="bi bi-database"></i> Databases</h4>
+                                        <ul>
+                                            <li> PostgreSQL</li>
+                                            <li> Redis</li>
+                                        </ul>
+                                        <h4><i class="bi bi-chat-dots"></i> Messaging & Streaming</h4>
+                                        <ul>
+                                            <li> Redis Pub/Sub (used with OpenSearch logs and dashboard)</li>
+                                            <li> Basic understanding of Kafka (optional if you want)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 4: Video Processing & OS -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon"><i class="bi bi-play-circle skill-icon"></i></div>
+                                    <h3>Video Processing &amp; OS</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="skill-details">
+                                        <h4><i class="bi bi-film"></i> Video Processing</h4>
+                                        <ul>
+                                            <li> FFmpeg & FFprobe</li>
+                                            <li> Live streaming workflows (Encoding, Segmentation, Encryption, Packaging)</li>
+                                            <li> SCTE-35 marker handling</li>
+                                        </ul>
+                                        <h4><i class="bi bi-windows"></i> Operating Systems</h4>
+                                        <ul>
+                                            <li> Linux/Unix (service management, cron jobs)</li>
+                                            <li> Windows</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+            </div>
+        </section>
+        
+        <!-- End Skills Section -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Services</h2>
+                    <p>With expertise across AI, Backend Systems, Cloud Infrastructure, and Frontend Applications, I deliver end-to-end solutions tailored to modern needs.</p>
+                </div>
+
+                <div class="row">
+                    <!-- Service 1: Gen AI Solutions -->
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+                        <div class="icon"><i class="bi bi-robot"></i></div>
+                        <h4 class="title"><a href="#">Gen AI Solutions</a></h4>
+                        <p class="description">Building intelligent applications using Generative AI, RAG (Retrieval-Augmented Generation), Prompt Engineering, and LangChain framework.</p>
+                    </div>
+
+                    <!-- Service 2: Backend Development -->
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon"><i class="bi bi-hdd-network"></i></div>
+                        <h4 class="title"><a href="#">Backend Engineering</a></h4>
+                        <p class="description">Developing robust Python and Node.js APIs, integrating PostgreSQL, Redis, OpenSearch, and messaging systems for scalable applications.</p>
+                    </div>
+
+                    <!-- Service 3: Video Processing -->
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon"><i class="bi bi-camera-reels"></i></div>
+                        <h4 class="title"><a href="#">Video Processing & Streaming</a></h4>
+                        <p class="description">Working with FFmpeg and FFprobe to automate video encoding, clipping, and live stream enhancements with SCTE markers.</p>
+                    </div>
+
+                    <!-- Service 4: Cloud Solutions -->
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon"><i class="bi bi-cloud"></i></div>
+                        <h4 class="title"><a href="#">Cloud Deployment & Architecture</a></h4>
+                        <p class="description">Architecting cloud-native applications with AWS (S3, EC2, Lambda) and GCP (Cloud Storage, Vertex AI).</p>
+                    </div>
+
+                    <!-- Service 5: Frontend Development -->
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon"><i class="bi bi-display"></i></div>
+                        <h4 class="title"><a href="#">Frontend Development</a></h4>
+                        <p class="description">Building responsive web applications using React.js, Next.js, Tailwind CSS, and integrating REST and GraphQL APIs.</p>
+                    </div>
+
+                    <!-- Service 6: API Design & Integration -->
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon"><i class="bi bi-plug"></i></div>
+                        <h4 class="title"><a href="#">API Design & Integration</a></h4>
+                        <p class="description">Designing RESTful and GraphQL APIs, integrating third-party services, and optimizing server-to-server communication.</p>
+                    </div>
+
+                    <!-- Service 7: Automation & Scripting -->
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="600">
+                        <div class="icon"><i class="bi bi-terminal"></i></div>
+                        <h4 class="title"><a href="#">Automation & Scripting</a></h4>
+                        <p class="description">Automating media workflows, cloud operations, and system tasks with Shell Scripting and Python scripting.</p>
+                    </div>
+
+                    <!-- Service 8: Data & Log Management -->
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="700">
+                        <div class="icon"><i class="bi bi-database-gear"></i></div>
+                        <h4 class="title"><a href="#">Data & Log Management</a></h4>
+                        <p class="description">Handling complex data operations using PostgreSQL and analyzing logs efficiently with OpenSearch dashboards.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Services Section -->
+
+
+
+        <!-- ======= Projects Section ======= -->
+        <section id="projects" class="projects">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Projects</h2>
+                    <p>Here's a glimpse into some of the impactful projects I have worked on, demonstrating my ability to deliver scalable and intelligent solutions.</p>
+                </div>
+                <div class="row">
+
+                    <!-- Project 1: Playout System -->
+                    <div class="col-lg-4 col-md-6 project-item" data-aos="fade-up">
+                        <div class="project-img">
+                            <img src="assets/img/projects/playout-system.png" class="img-fluid" alt="Playout System Project">
+                        </div>
+                        <h4 class="title"><a href="#">Playout System</a></h4>
+                        <p class="description">
+                            <strong>Role:</strong> Lead Developer<br>
+                            Modernized a live broadcast workflow by migrating a Python-based script into a scalable Next.js application with Redis and PostgreSQL backend. Enhanced system speed, reduced I/O operations, and introduced dynamic SCTE marker-based ad insertion for live streaming.
+                        </p>
+                    </div>
+                
+                    <!-- Project 2: Videograph.AI -->
+                    <div class="col-lg-4 col-md-6 project-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img">
+                            <img src="assets/img/projects/videograph-ai.png" class="img-fluid" alt="Videograph AI Project">
+                        </div>
+                        <h4 class="title"><a href="#">Videograph.AI</a></h4>
+                        <p class="description">
+                            <strong>Role:</strong> Developer<br>
+                            Designed downloader and encoder modules, implemented AI-driven video analysis for automatic clipping and metadata creation, and optimized end-to-end media pipelines for live monitoring, analytics, and social publishing.
+                        </p>
+                    </div>
+                
+                    <!-- Project 3: Yupp VOD Engine -->
+                    <div class="col-lg-4 col-md-6 project-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-img">
+                            <img src="assets/img/projects/yupp-vod-engine_1.png" class="img-fluid" alt="Yupp VOD Engine Project">
+                        </div>
+                        <h4 class="title"><a href="#">Yupp VOD Engine</a></h4>
+                        <p class="description">
+                            <strong>Role:</strong> Developer<br>
+                            Built a cloud-native solution supporting two major modules:<br>
+                            <strong>DRM Transcoding:</strong> Converts raw video files (.ts, .mpg, .mp4) into encrypted DRM-protected VOD assets with subtitle embedding and ad marker insertion.<br>
+                            <strong>Catch-up Generation:</strong> Transforms live-stream segments into VOD programs using timestamps, enabling users to replay telecasted shows easily.
+                        </p>
+                    </div>
+                
+                </div>
+                
+
+            </div>
+        </section>
+        <!-- End Projects Section -->
+
+
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+          
+              <div class="section-title">
+                <h2>Contact</h2>
+                <p>Feel free to reach out for collaboration, project discussions, or any queries. I'm always excited to connect!</p>
+              </div>
+          
+              <div class="row" data-aos="fade-in">
+          
+                <div class="col-lg-5 d-flex align-items-stretch">
+                  <div class="info">
+                    <div class="address">
+                      <i class="bi bi-geo-alt"></i>
+                      <h4>Location:</h4>
+                      <p>Hyderabad, Telangana, India</p>
+                    </div>
+          
+                    <div class="email">
+                      <i class="bi bi-envelope"></i>
+                      <h4>Email:</h4>
+                      <p>sivanagteja710@gamil.com</p>
+                    </div>
+          
+                    <div class="phone">
+                      <i class="bi bi-phone"></i>
+                      <h4>Call:</h4>
+                      <p>+91 9059880832</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- 👇 Right side image -->
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch justify-content-center">
+                  <img src="assets/img/code-computer.png" alt="Friendly Robot Waving Hi" class="img-fluid" style="max-height: 300px;">
+                </div>
+          
+              </div>
+            </div>
+          </section>
+          <!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
