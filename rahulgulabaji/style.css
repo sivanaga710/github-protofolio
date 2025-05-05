@@ -1,0 +1,864 @@
+/* General Styles */
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #f5deb3;
+    background-color: #131316;
+   
+
+    line-height: 1.6;
+    min-height: 100vh;
+}
+main{
+    
+    display: flex;
+    justify-content: center;
+  
+
+}
+
+/* Header Styles */
+header {
+
+    position: sticky;
+    top: ;
+    z-index: 100;
+    background-color: #1c1c21;
+}
+
+/* Navigation Styles */
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+#navbar div p {
+    margin: 10px 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+}
+#resuem a{
+    padding: 20px 20px;
+}
+#navbar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    width: 70px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+#navbar ul li:hover   {
+    color: #fff;
+    cursor: pointer;
+}
+#navbar li a.active {
+    color: rgb(132, 219, 25); /* Change the color to blue when active */
+  }
+@media (min-width:1090px) {
+    #menu li:before {
+        content: "";
+        position: absolute;
+        inset: calc(100% - 3px) 0 0 0; /* 3px = the thickness */
+        background: #ce4f20; /* the color */
+        scale: 0 1;
+        transition: .3s, translate 0s .3s;
+      }
+      #menu:hover li:before {
+        scale: 1;
+      }
+      #menu li:hover:before {
+        translate: 0;
+        transition: .3s;
+      }
+      #menu:hover li:has(~ li:hover):before {
+        translate: 100% 0;
+        transition: .2s .2s,scale 0s .4s;
+      }
+      #menu:hover li:hover ~ li:before {
+        translate: -100% 0;
+        transition: .2s .2s,scale 0s .4s;
+      }
+    
+      
+      /* Optional: Add some transition for a smoother effect */
+    #navbar li a {
+        transition: color 0.3s ease;
+      }
+    
+}
+#navbar ul li a {
+    text-decoration: none;
+    color: #f5deb3;
+}
+#navbar ul li:hover a{
+    color: rgb(132, 219, 25);
+}
+
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    margin: 20px ;
+    margin-top: 90px;
+}
+
+#left {
+    width: 45%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#right {
+    width: 45%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content:right;
+}
+
+h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing:0.1cm;
+}
+
+.type{
+    font-weight: 600;
+    
+}
+
+#element {
+    color: rgb(57, 230, 230);
+}
+
+
+#social {
+    display: flex;
+    padding: 0;
+    margin: 20px 0 0 0;
+    justify-content: flex-start;
+}
+
+#social a {
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+#social a img {
+    height: 45px;
+    transition: transform 0.4s ease;
+}
+
+#social a img:hover {
+    transform: scale(1.08);
+}
+
+#profile-pic{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%;
+    display: block;
+    transition: transform  1s ease-in-out,  box-shadow 0.6s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#profile-pic:hover{
+    transform: scale(1.01);
+    box-shadow: rgba(255, 255, 255, 0.052) 0px 5px 55px,
+                rgba(255, 255, 255, 0.052) 0px -12px 30px,
+                rgba(255, 255, 255, 0.052) 0px 4px 6px,
+                rgba(255, 255, 255, 0.052) 0px 12px 13px,
+                rgba(255, 255, 255, 0.052) 0px -3px 5px;
+}
+
+#ham {
+    display: none;
+    height: 38px;
+    padding: 10px;
+}
+#footer{
+    margin-top: 82px;
+}
+#footer p{
+    text-align: center;
+    margin: 0px;
+}
+#Heart{
+    color: red;
+
+}
+#home{
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design for larger screens */
+@media (max-width: 1090px) {
+    
+    #navbar ul{
+        display:none;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        background-color: #1c1c21;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        height: 640px;
+        
+        
+    }
+    
+    #navbar ul li{
+        width: 97%;
+        transition: color 0.1s ease-in-out;
+        padding: 20px 10px;
+       
+    }
+    #navbar ul li:nth-child(6){
+        padding: 0;
+    }
+    #resuem{
+        padding: 0px;
+    }
+    
+    #resuem a{
+        width: 100%;
+        text-align: center;
+    }
+    #navbar ul li:hover {
+        background-color:#393a41;
+    }
+    #navbar ul.active{
+        display:flex;
+    }
+    #navbar ul img {
+        display: block;
+    }
+    #profile-pic {
+        width: 100%;
+      
+        border-radius: 50%;
+        display: block;
+
+    }
+    #ham {
+        display: block;
+        align-self: flex-end;
+        z-index: 101;
+    }
+    .project-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .active {
+        display:flex;
+    }
+    #footer{
+        margin-top: 122px;
+    }
+    #right {
+        justify-content:center;
+    }
+    #home{
+        margin: 20px;
+        margin-top: 0px;
+    }
+}
+
+
+
+
+.About{
+    display: none;
+    margin: 40px;
+    width: 100%;
+    height: 100%;
+    padding-inline: 40px;
+}
+
+
+#heading {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#heading h3{
+    padding-left:25px ;
+    font-weight: 500;
+}
+#line{
+    width: 50px;
+    height:2px;
+    background-color: white;
+    margin: 10px;
+}
+.about{
+    background-color:#26262c;
+    border-radius: 20px;
+
+}
+#box{
+    width: 100%;
+    display: flex;
+}
+#about-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    width: 35%;
+    padding: 5px;
+}
+#about-left ul{
+    font-size: 20px;
+    padding-left:10px;
+    margin-bottom: 15px;
+}
+#about-left ul li{
+    list-style: none;
+    font-size: 15px;
+}
+#about-pic{
+    
+    width: 70%;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 50%;
+    border: 3px solid wheat;
+    box-shadow: rgba(147, 147, 161, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#about-left h3{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+}
+#about-right{
+    width:70%;
+    margin-left: 15px;
+    margin-right: 0px;
+    padding: 35px;
+}
+#about-right p{
+    margin:0;
+    font-size: 17px;
+    text-align:justify;
+}
+
+@media ( max-width:720px) {
+    .About{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+  
+}
+
+.Projects{
+    display: none;
+    margin: 40px;
+    width: 100%;
+    height: 100%;
+    padding-inline: 40px;
+}
+
+.project-box{
+    width: 100%;
+    height: 100%;
+    background-color:#26262c;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    border-radius: 20px;
+}
+.project-section{
+    height: 200px;
+    width: 350px;
+    border: 3px solid ;
+    margin: 30px;
+
+}
+.project-section img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.Education{
+    display: none;
+    margin: 40px;
+    width: 100%;
+    height: 100%;
+    padding-inline: 40px;
+}
+
+.Eduaction-box{
+    width: 100%;
+    height: 100%;
+    background-color:#26262c;
+    display: flex;
+    justify-content:center;
+    align-content: space-evenly;
+    border-radius: 20px;
+    margin-block: 15px;
+    
+}
+#BE{
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    background-color: #26262c;
+    border: 5px solid #393a41;
+    margin: 20px;
+    margin-block: 40px; 
+    padding: 15px;
+    transition: transform 0.7s ease-in-out, background-color 0.7s ease-in-out;
+}
+#BE:hover{
+    background-color: #393a41;
+    transform: scale(1.01);
+}
+#course-deatils{
+    padding-left: 15px;
+}
+#course-duration h3{
+    margin-block: 10px;
+}
+#vtu-logo{
+    width: 98%;
+    border: 5px solid black;
+}
+
+.section {
+    display: none; 
+}
+.active {
+        display: block; 
+    }
+.Active-color{
+    color: azure;
+}
+#certification-section{
+    width: 100%;
+    height: 100%;
+    background-color:#26262c;
+    border-radius: 20px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Certification-tab {
+    margin-block: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    align-items: center;
+    border: 10px solid rgba(255, 255, 255, 0.029);
+    border-radius: 20px;
+
+}
+
+.Certification-tab div{
+    padding-left: 15px;
+}
+.Certification-tab a{
+    text-decoration:none;
+    color: wheat;
+    font-style: italic;
+}
+.Certification-tab img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+/* Section for Skills */
+#skills{
+    
+    margin: 40px;
+    width: 100%;
+    height: 100%;
+    padding-inline: 40px;
+}
+  
+
+#skills-box{
+    
+    border-radius: 20px;
+    background-color: #26262c;;
+    width: 100%;
+    height: 100%;
+    
+    
+    
+}
+#skills-box div{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.skills-tab{
+    width: 110px;
+    height: 110px;
+    background-color:#26262c;
+    margin: 10px;
+    border-radius: 25px;
+    transition: transform 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-tab span {
+
+    color: white;
+}
+.skills-tab:hover{
+    background-color:#393a41;
+    transform: scale(1.07);
+}
+.skills-tab img{
+    height: 50px;
+
+}
+
+
+/* Contact Section */
+#contact{
+    margin: 40px;
+    width: 100%;
+    height: 100%;
+    padding-inline: 40px;
+}
+#Contact-form{
+    width: 100%;
+    height: 100%;
+    background-color:#26262c;
+    border-radius: 20px;
+    margin-block: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#Contact-form h3{
+    text-align: center;
+    background-color:#2f3037;
+}
+#Contact-form >div{
+    width:500px;
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#2f3037;
+    border-radius: 40px;
+}
+#Contact-form div input{
+    color: wheat;
+    border: #1c1c21;
+    outline: none;
+    margin-block:10px;
+    padding: 15px;
+    width: 100%;
+    font-size: 17px;
+    text-align: left;
+    border-radius: 40px;
+    background-color: #393a41;
+    
+}
+#Contact-form div input:hover,
+#Contact-form div input:focus{
+    border:0.5px solid  wheat;
+    background-color:#4b4c52 ;
+}
+
+::placeholder{
+    font-size: 15px;
+    font-weight:500;
+    color: #f5deb3;
+    padding: px;
+}
+textarea {
+    background-color:#393a41;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    resize: none;
+    color: wheat;
+}
+textarea:hover,
+textarea :focus{
+    border:1px solid  wheat;
+    background-color:#4b4c52 ;
+}
+#submit{
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: #6a6b70;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    margin:20px;
+    color: #f5deb3;
+}
+
+#contact-box{
+    width: 100%;
+    height: 100%;
+    background-color:#26262c;
+    border-radius: 20px;
+    padding-top: 15px;
+    
+}
+#contact-box h3{
+    margin-left: 15px;
+    text-align: center;
+    margin-block: 5px;
+}
+#contact-box div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-block: 20px;
+    align-items: center;
+}
+
+#contact-box img{
+    height: 50px;
+    transition: transform 0.3s ease;
+    
+}
+#contact-box img:hover{
+    transform: scale(1.1);
+}
+
+#contact-social{
+    display: flex;
+    justify-content: space-evenly;
+}
+#contact-address{
+    display: flex;
+    flex-direction: column;
+}
+#contact-address p{
+    text-align: center;
+    padding: 10px;
+}
+
+
+    @media (max-width: 767px) {
+        #ham {
+            display: block;
+            align-self: flex-end;
+            z-index: 101;
+        }
+    
+        .first {
+            flex-direction: column-reverse;
+            margin: 20px ;
+            margin-top: 20px;
+        }
+    
+        #left,
+        #right {
+            width: 100%;
+        }
+    
+        #left {
+            text-align: center;
+        }
+    
+        h2 {
+            
+            margin-block: 10px;
+        }
+    
+        #social {
+            justify-content: center;
+        }
+    
+        main {
+          margin-top: 10px;
+        }
+        #profile-pic {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+            display: block;
+        }
+        
+        .Education{
+            margin: 10px;
+            width: 100%;
+    height: 100%;
+    padding-inline: 20px;
+}
+        
+        #BE{
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            font-size: 11px;
+            
+        }
+        #course-duration{
+            font-size: 13px;
+        }
+        #certification-section{
+           
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .Section{
+            
+            margin: 10px;
+            width: 100%;
+            height: 100%;
+            padding-inline: 20px;
+        }
+        .About{
+    
+            margin: 10px;
+            width: 100%;
+            height: 100%;
+            padding-inline: 20px;
+        }
+        /* About Left Section */
+
+        #about-left{
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            width: 100%;
+            padding: 0px;
+        }
+        #about-right{
+            margin-top: 15px;
+            width:100%;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0px;
+        }
+        #about-left ul{
+            font-size: 15px;
+
+        
+        }
+        #about-right p {
+            margin: 30px;
+            font-size: 15px;
+        }
+        .Projects{
+             
+            margin: 10px;
+            width: 100%;
+            height: 100%;
+            padding-inline: 20px;
+        }
+        
+        
+        .project-section{
+            height: 180px;
+            width: 280px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #box{
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+        }
+        
+
+        /* heading Name RAhul Gualabji in home  */
+        h2{
+            font-size: 40px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            letter-spacing:0.1cm;
+        }
+        #skills{
+    
+            margin: 10px;
+            width: 100%;
+            height: 100%;
+            padding-inline: 20px;
+}
+        #skills-box {
+            display: flex;
+            justify-content:space-evenly;
+            
+        }
+        #skills-box div{
+            display: flex;
+            flex-direction: column;
+        }
+        #contact{
+            margin: 10px;
+            width: 100%;
+            height: 100%;
+            padding-inline: 20px;
+        }
+        #Contact-form >div{
+            width:250px;
+            margin: 20px;
+            padding: 20px;
+        }
+        #contact-box{
+            display: flex;
+            align-content:space-evenly;
+            flex-direction: column;
+        }
+    }
+/* Target the scrollbar */
+::-webkit-scrollbar {
+    width: 0px; /* Width of the scrollbar */
+  }
